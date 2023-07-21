@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Car Management</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cv6RSFaxnaH50ff4myc2FqBKGjZ"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container mt-4">
+			<h1>Car Management</h1>
+			<!-- Car Table -->
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Category</th>
+						<th>Make</th>
+						<th>Model</th>
+						<th>Color</th>
+						<th>Registration Number</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Car data will be dynamically populated here using JavaScript -->
+				</tbody>
+			</table>
+
+			<!-- Add Car Form -->
+			<h2>Add New Car</h2>
+			<form id="addCarForm">
+				<div class="mb-3">
+					<label for="category" class="form-label">Category:</label>
+					<select
+						class="form-select"
+						aria-label="Default select example"
+						id="category"
+					>
+						<option value="SUV">SUV</option>
+						<option value="SEDAN">SEDAN</option>
+						<option value="HATCHBACK">HATCHBACK</option>
+						<option value="CROSSOVER">CROSSOVER</option>
+					</select>
+				</div>
+
+				<div class="mb-3">
+					<label for="make" class="form-label">Make:</label>
+					<input type="text" class="form-control" id="make" required />
+				</div>
+				<div class="mb-3">
+					<label for="model" class="form-label">Model:</label>
+					<input type="text" class="form-control" id="model" required />
+				</div>
+				<div class="mb-3">
+					<label for="color" class="form-label">Color:</label>
+					<input type="text" class="form-control" id="color" required />
+				</div>
+				<div class="mb-3">
+					<label for="registrationNo" class="form-label"
+						>Registration Number:</label
+					>
+					<input
+						type="text"
+						class="form-control"
+						id="registrationNo"
+						required
+					/>
+				</div>
+				<button type="submit" class="btn btn-primary">Add Car</button>
+			</form>
+		</div>
+
+		<!-- JavaScript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script src="cars.js"></script>
+		<!-- Create cars.js in the 'public' folder for handling CRUD operations -->
+	</body>
+</html>
