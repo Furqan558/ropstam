@@ -23,7 +23,6 @@ const signUp = async (req, res) => {
 
 			await newUser.save();
 
-			// Sending welcome email (same as before)
 			const message = `User created successfully and your new password is ${randomPassword}`;
 			res.status(201).json({ message: message });
 		} else {
@@ -45,7 +44,6 @@ const signUp = async (req, res) => {
 
 			await newUser.save();
 
-			// Sending welcome email (same as before)
 			const message = `User created successfully and your new password is ${randomPassword}`;
 			res.status(201).json({ message: message });
 		}
@@ -94,7 +92,7 @@ const signIn = async (req, res) => {
 		}
 
 		const token = jwt.sign({ email: user.email }, process.env.JWT_SECRET, {
-			expiresIn: "1h", // You can adjust the token expiration time as per your needs.
+			expiresIn: "1h", // 1 Hour token expiration time.
 		});
 
 		res.json({ token });
