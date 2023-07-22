@@ -1,12 +1,10 @@
-# Ropstam Smart Contract
+# CRUD App + Ropstam Smart Contract
+
+[Watch Loom Video: Project Explanation](https://www.loom.com/share/ca3564df8e5e4055851672a06c9d7f02?sid=a3b5f170-d4e9-4760-a9bf-be7fee22187b)
 
 [Watch Loom Video: Smart Contract Explanation](https://www.loom.com/share/9c85b46f43fd4dbb9b8d02354b2db94f?sid=615f64f7-6c38-4668-a785-e518a87e2b8c)
 
-Smart Contract code in the above is in the Ropstam.sol file in the root directory of the project
-
-# CRUD App
-
-[Watch Loom Video: Project Explanation](https://www.loom.com/share/ca3564df8e5e4055851672a06c9d7f02?sid=a3b5f170-d4e9-4760-a9bf-be7fee22187b)
+Note: Smart Contract code in the above is in the Ropstam.sol file in the root directory of the project
 
 The Car Management App is a web application built using Node.js, Express.js, MongoDB, and Bootstrap. This app allows users to manage a list of cars, including their make, model, color, and registration number. Users can add new cars, view the list of existing cars, edit car details, and delete cars as needed.
 
